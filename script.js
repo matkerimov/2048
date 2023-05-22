@@ -14,7 +14,7 @@ setUpInputOnce();
 
 
 function setUpInputOnce() { // тут мы подписались нажатие клавиши тоько один раз
-    window.addEventListener("keydown", handleInput, {once: true}) // после нажатии клавиши будет вызвана функция handleInput
+    window.addEventListener("keydown, touchstart", handleInput, {once: true}) // после нажатии клавиши будет вызвана функция handleInput
 }
 
 async function handleInput(event) {
