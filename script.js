@@ -12,7 +12,7 @@ grid.getRandomEmptyCell().linkTile(new Tile(gameBoard))
 // new Tile - создание плиточки
 setUpInputOnce();
 
-let hammerTime = new Hammer(myElement);
+let hammerTime = new Hammer(gameBoard);
 // hammerTime.on('pan', function(ev) {
 //     console.log(ev);
 //     hammerTime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
