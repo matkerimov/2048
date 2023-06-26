@@ -12,6 +12,13 @@ grid.getRandomEmptyCell().linkTile(new Tile(gameBoard))
 // new Tile - создание плиточки
 setUpInputOnce();
 
+let hammerTime = new Hammer(myElement);
+// hammerTime.on('pan', function(ev) {
+//     console.log(ev);
+//     hammerTime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+    hammerTime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+
 
 function setUpInputOnce() { // тут мы подписались нажатие клавиши тоько один раз
     window.addEventListener("keydown", handleInput, {once: true}) // после нажатии клавиши будет вызвана функция handleInput
